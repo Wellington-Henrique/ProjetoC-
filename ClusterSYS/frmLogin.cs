@@ -31,6 +31,7 @@ namespace ClusterSYS
 
             if (txtLogin.Text == "adm" && txtSenha.Text == "123")
             {
+                //frmLogin.ActiveForm.Hide();
                 Hide();
                 principal.Show();             
             }
@@ -42,7 +43,7 @@ namespace ClusterSYS
 
             else
             {
-                lblMsg.Text = "Usuário ou senha inválida!";
+                lblMsg.Visible = true;
                 contaTentativas++;
             }
 

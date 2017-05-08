@@ -36,11 +36,11 @@
             this.lblData = new System.Windows.Forms.Label();
             this.lblCodCli = new System.Windows.Forms.Label();
             this.gbPedido = new System.Windows.Forms.GroupBox();
+            this.lbItenPedido = new System.Windows.Forms.ListBox();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.lbItenPedido = new System.Windows.Forms.ListBox();
             this.gbDadosVenda.SuspendLayout();
             this.gbPedido.SuspendLayout();
             this.pnlMain.SuspendLayout();
@@ -58,7 +58,7 @@
             this.gbDadosVenda.Location = new System.Drawing.Point(12, 12);
             this.gbDadosVenda.Name = "gbDadosVenda";
             this.gbDadosVenda.Size = new System.Drawing.Size(744, 70);
-            this.gbDadosVenda.TabIndex = 30;
+            this.gbDadosVenda.TabIndex = 0;
             this.gbDadosVenda.TabStop = false;
             this.gbDadosVenda.Text = "Dados da venda";
             // 
@@ -68,7 +68,7 @@
             this.txtNVendedor.MaxLength = 3;
             this.txtNVendedor.Name = "txtNVendedor";
             this.txtNVendedor.Size = new System.Drawing.Size(75, 20);
-            this.txtNVendedor.TabIndex = 29;
+            this.txtNVendedor.TabIndex = 1;
             // 
             // lblLegData
             // 
@@ -96,7 +96,7 @@
             this.txtCodCli.MaxLength = 3;
             this.txtCodCli.Name = "txtCodCli";
             this.txtCodCli.Size = new System.Drawing.Size(75, 20);
-            this.txtCodCli.TabIndex = 29;
+            this.txtCodCli.TabIndex = 0;
             // 
             // lblData
             // 
@@ -129,6 +129,14 @@
             this.gbPedido.TabStop = false;
             this.gbPedido.Text = "Itens do pedido";
             // 
+            // lbItenPedido
+            // 
+            this.lbItenPedido.FormattingEnabled = true;
+            this.lbItenPedido.Location = new System.Drawing.Point(9, 20);
+            this.lbItenPedido.Name = "lbItenPedido";
+            this.lbItenPedido.Size = new System.Drawing.Size(728, 342);
+            this.lbItenPedido.TabIndex = 0;
+            // 
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -158,7 +166,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(650, 0);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 25);
-            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -169,17 +177,9 @@
             this.btnCadastrar.Location = new System.Drawing.Point(520, 0);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(100, 25);
-            this.btnCadastrar.TabIndex = 5;
+            this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // lbItenPedido
-            // 
-            this.lbItenPedido.FormattingEnabled = true;
-            this.lbItenPedido.Location = new System.Drawing.Point(9, 20);
-            this.lbItenPedido.Name = "lbItenPedido";
-            this.lbItenPedido.Size = new System.Drawing.Size(728, 342);
-            this.lbItenPedido.TabIndex = 0;
             // 
             // frmVenda
             // 

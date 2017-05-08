@@ -44,7 +44,7 @@
             this.txtSenha.MaxLength = 20;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(200, 20);
-            this.txtSenha.TabIndex = 9;
+            this.txtSenha.TabIndex = 1;
             // 
             // lblSenha
             // 
@@ -61,7 +61,7 @@
             this.txtLogin.MaxLength = 20;
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(200, 20);
-            this.txtLogin.TabIndex = 7;
+            this.txtLogin.TabIndex = 0;
             // 
             // lblLogin
             // 
@@ -89,13 +89,14 @@
             this.lblMsg.TabIndex = 12;
             this.lblMsg.Text = "Usuário ou senha inválida!";
             this.lblMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMsg.Visible = false;
             // 
             // btnEntrar
             // 
             this.btnEntrar.Location = new System.Drawing.Point(92, 276);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(100, 25);
-            this.btnEntrar.TabIndex = 13;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 

@@ -32,11 +32,11 @@
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.vendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msCadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.msCadCli = new System.Windows.Forms.ToolStripMenuItem();
             this.msCadProd = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlBaseFrm = new System.Windows.Forms.Panel();
-            this.vendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,13 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // vendaToolStripMenuItem
+            // 
+            this.vendaToolStripMenuItem.Name = "vendaToolStripMenuItem";
+            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.vendaToolStripMenuItem.Text = "Venda";
+            this.vendaToolStripMenuItem.Click += new System.EventHandler(this.vendaToolStripMenuItem_Click);
+            // 
             // msCadastro
             // 
             this.msCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -83,14 +90,14 @@
             // msCadCli
             // 
             this.msCadCli.Name = "msCadCli";
-            this.msCadCli.Size = new System.Drawing.Size(152, 22);
+            this.msCadCli.Size = new System.Drawing.Size(117, 22);
             this.msCadCli.Text = "Pessoa";
             this.msCadCli.Click += new System.EventHandler(this.msCadCli_Click);
             // 
             // msCadProd
             // 
             this.msCadProd.Name = "msCadProd";
-            this.msCadProd.Size = new System.Drawing.Size(182, 22);
+            this.msCadProd.Size = new System.Drawing.Size(117, 22);
             this.msCadProd.Text = "Produto";
             this.msCadProd.Click += new System.EventHandler(this.msCadProd_Click);
             // 
@@ -101,13 +108,6 @@
             this.pnlBaseFrm.Name = "pnlBaseFrm";
             this.pnlBaseFrm.Size = new System.Drawing.Size(784, 537);
             this.pnlBaseFrm.TabIndex = 2;
-            // 
-            // vendaToolStripMenuItem
-            // 
-            this.vendaToolStripMenuItem.Name = "vendaToolStripMenuItem";
-            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.vendaToolStripMenuItem.Text = "Venda";
-            this.vendaToolStripMenuItem.Click += new System.EventHandler(this.vendaToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
