@@ -36,7 +36,10 @@
             this.msCadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.msCadCli = new System.Windows.Forms.ToolStripMenuItem();
             this.msCadProd = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlBaseFrm = new System.Windows.Forms.Panel();
+            this.pedidoDeVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orçamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +67,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vendaToolStripMenuItem,
-            this.msCadastro});
+            this.msCadastro,
+            this.consultaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(784, 24);
@@ -73,6 +77,9 @@
             // 
             // vendaToolStripMenuItem
             // 
+            this.vendaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pedidoDeVendaToolStripMenuItem,
+            this.orçamentoToolStripMenuItem});
             this.vendaToolStripMenuItem.Name = "vendaToolStripMenuItem";
             this.vendaToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.vendaToolStripMenuItem.Text = "Venda";
@@ -101,19 +108,41 @@
             this.msCadProd.Text = "Produto";
             this.msCadProd.Click += new System.EventHandler(this.msCadProd_Click);
             // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.consultaToolStripMenuItem.Text = "Consulta";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
+            // 
             // pnlBaseFrm
             // 
+            this.pnlBaseFrm.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pnlBaseFrm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBaseFrm.Location = new System.Drawing.Point(0, 25);
             this.pnlBaseFrm.Name = "pnlBaseFrm";
-            this.pnlBaseFrm.Size = new System.Drawing.Size(784, 537);
+            this.pnlBaseFrm.Size = new System.Drawing.Size(784, 536);
             this.pnlBaseFrm.TabIndex = 2;
+            // 
+            // pedidoDeVendaToolStripMenuItem
+            // 
+            this.pedidoDeVendaToolStripMenuItem.Name = "pedidoDeVendaToolStripMenuItem";
+            this.pedidoDeVendaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.pedidoDeVendaToolStripMenuItem.Text = "Pedido de venda";
+            this.pedidoDeVendaToolStripMenuItem.Click += new System.EventHandler(this.pedidoDeVendaToolStripMenuItem_Click);
+            // 
+            // orçamentoToolStripMenuItem
+            // 
+            this.orçamentoToolStripMenuItem.Name = "orçamentoToolStripMenuItem";
+            this.orçamentoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.orçamentoToolStripMenuItem.Text = "Orçamento";
+            this.orçamentoToolStripMenuItem.Click += new System.EventHandler(this.orçamentoToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.pnlBaseFrm);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
@@ -138,5 +167,8 @@
         private System.Windows.Forms.ToolStripMenuItem msCadProd;
         private System.Windows.Forms.Panel pnlBaseFrm;
         private System.Windows.Forms.ToolStripMenuItem vendaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pedidoDeVendaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orçamentoToolStripMenuItem;
     }
 }

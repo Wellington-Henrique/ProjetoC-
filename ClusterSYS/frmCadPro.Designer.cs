@@ -46,18 +46,18 @@
             this.lblFornecedor = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblLocacao = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.lblUniMed = new System.Windows.Forms.Label();
             this.lblQtd = new System.Windows.Forms.Label();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.cbLocacao = new System.Windows.Forms.ComboBox();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
             this.cbMedida = new System.Windows.Forms.ComboBox();
             this.cbFornecedores = new System.Windows.Forms.ComboBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbStatus = new System.Windows.Forms.ComboBox();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.cbLocacao = new System.Windows.Forms.ComboBox();
-            this.lblLocacao = new System.Windows.Forms.Label();
             this.R4.SuspendLayout();
             this.gbCusto.SuspendLayout();
             this.gbProduto.SuspendLayout();
@@ -90,14 +90,14 @@
             // 
             // R4
             // 
-            this.R4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.R4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.R4.Controls.Add(this.gbCusto);
             this.R4.Controls.Add(this.gbProduto);
             this.R4.Controls.Add(this.panel1);
             this.R4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.R4.Location = new System.Drawing.Point(0, 0);
             this.R4.Name = "R4";
-            this.R4.Size = new System.Drawing.Size(768, 499);
+            this.R4.Size = new System.Drawing.Size(768, 498);
             this.R4.TabIndex = 8;
             // 
             // gbCusto
@@ -259,6 +259,26 @@
             this.lblCategoria.TabIndex = 6;
             this.lblCategoria.Text = "Categoria";
             // 
+            // lblLocacao
+            // 
+            this.lblLocacao.AutoSize = true;
+            this.lblLocacao.Location = new System.Drawing.Point(226, 58);
+            this.lblLocacao.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.lblLocacao.Name = "lblLocacao";
+            this.lblLocacao.Size = new System.Drawing.Size(49, 13);
+            this.lblLocacao.TabIndex = 18;
+            this.lblLocacao.Text = "Locação";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(168, 57);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(37, 13);
+            this.lblStatus.TabIndex = 18;
+            this.lblStatus.Text = "Status";
+            // 
             // lblUniMed
             // 
             this.lblUniMed.AutoSize = true;
@@ -297,6 +317,22 @@
             this.txtDescricao.Size = new System.Drawing.Size(360, 20);
             this.txtDescricao.TabIndex = 5;
             // 
+            // cbLocacao
+            // 
+            this.cbLocacao.FormattingEnabled = true;
+            this.cbLocacao.Location = new System.Drawing.Point(229, 73);
+            this.cbLocacao.Name = "cbLocacao";
+            this.cbLocacao.Size = new System.Drawing.Size(120, 21);
+            this.cbLocacao.TabIndex = 3;
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Location = new System.Drawing.Point(171, 72);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(52, 21);
+            this.cbStatus.TabIndex = 3;
+            // 
             // cbMedida
             // 
             this.cbMedida.FormattingEnabled = true;
@@ -326,52 +362,16 @@
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.btnCadastrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 459);
+            this.panel1.Location = new System.Drawing.Point(0, 458);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(768, 40);
             this.panel1.TabIndex = 16;
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.FormattingEnabled = true;
-            this.cbStatus.Location = new System.Drawing.Point(171, 72);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(52, 21);
-            this.cbStatus.TabIndex = 3;
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(168, 57);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(37, 13);
-            this.lblStatus.TabIndex = 18;
-            this.lblStatus.Text = "Status";
-            // 
-            // cbLocacao
-            // 
-            this.cbLocacao.FormattingEnabled = true;
-            this.cbLocacao.Location = new System.Drawing.Point(229, 73);
-            this.cbLocacao.Name = "cbLocacao";
-            this.cbLocacao.Size = new System.Drawing.Size(120, 21);
-            this.cbLocacao.TabIndex = 3;
-            // 
-            // lblLocacao
-            // 
-            this.lblLocacao.AutoSize = true;
-            this.lblLocacao.Location = new System.Drawing.Point(226, 58);
-            this.lblLocacao.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
-            this.lblLocacao.Name = "lblLocacao";
-            this.lblLocacao.Size = new System.Drawing.Size(49, 13);
-            this.lblLocacao.TabIndex = 18;
-            this.lblLocacao.Text = "Locação";
             // 
             // frmCadPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 499);
+            this.ClientSize = new System.Drawing.Size(768, 498);
             this.Controls.Add(this.R4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(784, 537);

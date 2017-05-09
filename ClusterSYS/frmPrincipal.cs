@@ -15,6 +15,8 @@ namespace ClusterSYS
         private frmCadPro cadPro;
         private frmCadPes cadPes;
         private frmVenda venda;
+        private frmBuscaPessoa consulta;
+        private frmOrcamento orcamento;
 
         public frmPrincipal()
         {
@@ -58,6 +60,39 @@ namespace ClusterSYS
 
         private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            consulta?.Close();
+
+            consulta = new frmBuscaPessoa
+            {
+                TopLevel = true,
+                Dock = DockStyle.Fill
+            };
+
+            //pnlBaseFrm.Controls.Add(this);
+            consulta.Show();
+        }
+
+        private void orçamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            orcamento?.Close();
+
+            orcamento = new frmOrcamento
+            {
+                TopLevel = true,
+                Dock = DockStyle.Fill
+            };
+
+            //pnlBaseFrm.Controls.Add(orcamento);
+            orcamento.Show();
+        }
+
+        private void pedidoDeVendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             cadPes?.Close();
             cadPro?.Close();
             venda?.Close();
@@ -71,6 +106,7 @@ namespace ClusterSYS
 
             pnlBaseFrm.Controls.Add(venda);
             venda.Show();
+
         }
     }
 

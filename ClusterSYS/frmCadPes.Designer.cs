@@ -108,7 +108,7 @@
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.btnCadastrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 459);
+            this.panel1.Location = new System.Drawing.Point(0, 458);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(768, 40);
             this.panel1.TabIndex = 16;
@@ -123,6 +123,7 @@
             this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnCadastrar
             // 
@@ -208,7 +209,7 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlMain.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pnlMain.Controls.Add(this.gbEndereco);
             this.pnlMain.Controls.Add(this.gbContato);
             this.pnlMain.Controls.Add(this.gbDadosPessoais);
@@ -217,7 +218,7 @@
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(768, 499);
+            this.pnlMain.Size = new System.Drawing.Size(768, 498);
             this.pnlMain.TabIndex = 9;
             // 
             // gbEndereco
@@ -230,7 +231,7 @@
             this.gbEndereco.Controls.Add(this.txtRua);
             this.gbEndereco.Location = new System.Drawing.Point(12, 276);
             this.gbEndereco.Name = "gbEndereco";
-            this.gbEndereco.Size = new System.Drawing.Size(705, 130);
+            this.gbEndereco.Size = new System.Drawing.Size(744, 102);
             this.gbEndereco.TabIndex = 3;
             this.gbEndereco.TabStop = false;
             this.gbEndereco.Text = "Dados de endereços";
@@ -282,7 +283,7 @@
             this.gbContato.Controls.Add(this.txtEmail);
             this.gbContato.Location = new System.Drawing.Point(13, 200);
             this.gbContato.Name = "gbContato";
-            this.gbContato.Size = new System.Drawing.Size(704, 69);
+            this.gbContato.Size = new System.Drawing.Size(743, 69);
             this.gbContato.TabIndex = 2;
             this.gbContato.TabStop = false;
             this.gbContato.Text = "Dados de contato";
@@ -332,7 +333,7 @@
             this.gbDadosPessoais.Controls.Add(this.txtDescricao);
             this.gbDadosPessoais.Location = new System.Drawing.Point(13, 88);
             this.gbDadosPessoais.Name = "gbDadosPessoais";
-            this.gbDadosPessoais.Size = new System.Drawing.Size(704, 106);
+            this.gbDadosPessoais.Size = new System.Drawing.Size(743, 106);
             this.gbDadosPessoais.TabIndex = 1;
             this.gbDadosPessoais.TabStop = false;
             this.gbDadosPessoais.Text = "Dados pessois";
@@ -347,7 +348,7 @@
             this.gbDadosUsuario.Controls.Add(this.lblCodigo);
             this.gbDadosUsuario.Location = new System.Drawing.Point(12, 12);
             this.gbDadosUsuario.Name = "gbDadosUsuario";
-            this.gbDadosUsuario.Size = new System.Drawing.Size(705, 70);
+            this.gbDadosUsuario.Size = new System.Drawing.Size(744, 70);
             this.gbDadosUsuario.TabIndex = 0;
             this.gbDadosUsuario.TabStop = false;
             this.gbDadosUsuario.Text = "Dados de usuário";
@@ -374,7 +375,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 499);
+            this.ClientSize = new System.Drawing.Size(768, 498);
             this.Controls.Add(this.pnlMain);
             this.MaximumSize = new System.Drawing.Size(784, 537);
             this.Name = "frmCadPes";

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ClusterSYS
 {
-    public partial class frmCadPes : Form
+    public partial class frmBuscaPessoa : Form
     {
-        public frmCadPes()
+        public frmBuscaPessoa()
         {
             InitializeComponent();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

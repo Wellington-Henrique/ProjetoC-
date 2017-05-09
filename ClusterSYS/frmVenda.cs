@@ -16,5 +16,16 @@ namespace ClusterSYS
         {
             InitializeComponent();
         }
+
+        private void rdBtnCancelar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdBtnCancelar.Checked == true)
+            {
+                if (MessageBox.Show("Deseja realmente cancelar este pedido?", "Vendas", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    Close();
+                }
+            }
+        }
     }
 }
