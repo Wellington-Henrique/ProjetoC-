@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.R4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             this.gbCusto = new System.Windows.Forms.GroupBox();
             this.txtCustoVenda = new System.Windows.Forms.TextBox();
             this.lblCustoVenda = new System.Windows.Forms.Label();
@@ -57,48 +58,54 @@
             this.cbMedida = new System.Windows.Forms.ComboBox();
             this.cbFornecedores = new System.Windows.Forms.ComboBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.R4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.gbCusto.SuspendLayout();
             this.gbProduto.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCadastrar.Location = new System.Drawing.Point(520, 0);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(100, 25);
-            this.btnCadastrar.TabIndex = 10;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Location = new System.Drawing.Point(650, 0);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(100, 25);
-            this.btnCancelar.TabIndex = 11;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // R4
             // 
             this.R4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.R4.Controls.Add(this.panel1);
             this.R4.Controls.Add(this.gbCusto);
             this.R4.Controls.Add(this.gbProduto);
-            this.R4.Controls.Add(this.panel1);
             this.R4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.R4.Location = new System.Drawing.Point(0, 0);
             this.R4.Name = "R4";
-            this.R4.Size = new System.Drawing.Size(768, 498);
+            this.R4.Padding = new System.Windows.Forms.Padding(5, 0, 5, 20);
+            this.R4.Size = new System.Drawing.Size(768, 499);
             this.R4.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnCancelar);
+            this.panel1.Controls.Add(this.btnOk);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(5, 454);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(758, 25);
+            this.panel1.TabIndex = 41;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(658, 0);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(100, 25);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnOk
+            // 
+            this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.Location = new System.Drawing.Point(552, 0);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(100, 25);
+            this.btnOk.TabIndex = 2;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
             // 
             // gbCusto
             // 
@@ -108,9 +115,10 @@
             this.gbCusto.Controls.Add(this.lblCustoMedio);
             this.gbCusto.Controls.Add(this.txtCusto);
             this.gbCusto.Controls.Add(this.lblCusto);
-            this.gbCusto.Location = new System.Drawing.Point(12, 243);
+            this.gbCusto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbCusto.Location = new System.Drawing.Point(5, 225);
             this.gbCusto.Name = "gbCusto";
-            this.gbCusto.Size = new System.Drawing.Size(744, 64);
+            this.gbCusto.Size = new System.Drawing.Size(758, 64);
             this.gbCusto.TabIndex = 1;
             this.gbCusto.TabStop = false;
             this.gbCusto.Text = "Dados de custo";
@@ -189,9 +197,10 @@
             this.gbProduto.Controls.Add(this.cbMedida);
             this.gbProduto.Controls.Add(this.cbFornecedores);
             this.gbProduto.Controls.Add(this.cbCategoria);
-            this.gbProduto.Location = new System.Drawing.Point(12, 12);
+            this.gbProduto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbProduto.Location = new System.Drawing.Point(5, 0);
             this.gbProduto.Name = "gbProduto";
-            this.gbProduto.Size = new System.Drawing.Size(744, 225);
+            this.gbProduto.Size = new System.Drawing.Size(758, 225);
             this.gbProduto.TabIndex = 0;
             this.gbProduto.TabStop = false;
             this.gbProduto.Text = "Dados do produto";
@@ -357,21 +366,11 @@
             this.cbCategoria.Size = new System.Drawing.Size(200, 21);
             this.cbCategoria.TabIndex = 1;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 458);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 40);
-            this.panel1.TabIndex = 16;
-            // 
             // frmCadPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 498);
+            this.ClientSize = new System.Drawing.Size(768, 499);
             this.Controls.Add(this.R4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(784, 537);
@@ -380,18 +379,16 @@
             this.Text = "Cadastro de produto";
             this.Load += new System.EventHandler(this.frmCadPro_Load);
             this.R4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.gbCusto.ResumeLayout(false);
             this.gbCusto.PerformLayout();
             this.gbProduto.ResumeLayout(false);
             this.gbProduto.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Panel R4;
         private System.Windows.Forms.ComboBox cbCategoria;
         private System.Windows.Forms.TextBox txtDescricao;
@@ -399,7 +396,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtQtd;
         private System.Windows.Forms.Label lblUniMed;
         private System.Windows.Forms.ComboBox cbMedida;
@@ -420,6 +416,9 @@
         private System.Windows.Forms.ComboBox cbStatus;
         private System.Windows.Forms.Label lblLocacao;
         private System.Windows.Forms.ComboBox cbLocacao;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnOk;
     }
 }
 

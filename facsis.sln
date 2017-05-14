@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClusterSYS", "ClusterSYS\ClusterSYS.csproj", "{E1C6D871-772D-45C6-BAE7-72729920235E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "facsis", "ClusterSYS\facsis.csproj", "{E1C6D871-772D-45C6-BAE7-72729920235E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

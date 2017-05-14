@@ -50,3 +50,7 @@ D:\C#\ProjetoC-\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.Properties.Resources.r
 D:\C#\ProjetoC-\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.csproj.GenerateResource.Cache
 D:\C#\ProjetoC-\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.frmBuscaPessoa.resources
 D:\C#\ProjetoC-\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.frmOrcamento.resources
+C:\Users\Wellington\Desktop\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.frmBuscaPessoa.resources
+C:\Users\Wellington\Desktop\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.frmOrcamento.resources
+C:\Users\Wellington\Desktop\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.frmSplash.resources
+C:\Users\Wellington\Desktop\ProjetoC-\ClusterSYS\obj\Debug\ClusterSYS.frmCadUsuario.resources

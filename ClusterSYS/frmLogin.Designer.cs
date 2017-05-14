@@ -45,6 +45,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(200, 20);
             this.txtSenha.TabIndex = 1;
+            this.txtSenha.Text = "123";
             // 
             // lblSenha
             // 
@@ -62,6 +63,7 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(200, 20);
             this.txtLogin.TabIndex = 0;
+            this.txtLogin.Text = "adm";
             // 
             // lblLogin
             // 
@@ -105,6 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 312);
+            this.ControlBox = false;
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.pictureBox1);
@@ -112,13 +115,13 @@
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(300, 350);
             this.MinimumSize = new System.Drawing.Size(300, 350);
             this.Name = "frmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autenticação de usuário";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

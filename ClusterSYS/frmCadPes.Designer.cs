@@ -32,9 +32,6 @@
             this.txtTelefone1 = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblTelefone1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnCadastrar = new System.Windows.Forms.Button();
             this.cbPessoa = new System.Windows.Forms.ComboBox();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.lblCpfCnpj = new System.Windows.Forms.Label();
@@ -44,10 +41,15 @@
             this.txtRua = new System.Windows.Forms.TextBox();
             this.lblRua = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             this.gbEndereco = new System.Windows.Forms.GroupBox();
             this.lblCidade = new System.Windows.Forms.Label();
+            this.lblUf = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtUf = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.gbContato = new System.Windows.Forms.GroupBox();
             this.txtTelefone2 = new System.Windows.Forms.TextBox();
@@ -58,8 +60,8 @@
             this.gbDadosUsuario = new System.Windows.Forms.GroupBox();
             this.cbUsuario = new System.Windows.Forms.ComboBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.pnlMain.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.gbEndereco.SuspendLayout();
             this.gbContato.SuspendLayout();
             this.gbDadosPessoais.SuspendLayout();
@@ -102,39 +104,6 @@
             this.lblTelefone1.Size = new System.Drawing.Size(58, 13);
             this.lblTelefone1.TabIndex = 18;
             this.lblTelefone1.Text = "Telefone 1";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 458);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 40);
-            this.panel1.TabIndex = 16;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Location = new System.Drawing.Point(650, 0);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(100, 25);
-            this.btnCancelar.TabIndex = 12;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCadastrar.Location = new System.Drawing.Point(520, 0);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(100, 25);
-            this.btnCadastrar.TabIndex = 11;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
             // 
             // cbPessoa
             // 
@@ -210,28 +179,62 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pnlMain.Controls.Add(this.panel1);
             this.pnlMain.Controls.Add(this.gbEndereco);
             this.pnlMain.Controls.Add(this.gbContato);
             this.pnlMain.Controls.Add(this.gbDadosPessoais);
             this.pnlMain.Controls.Add(this.gbDadosUsuario);
-            this.pnlMain.Controls.Add(this.panel1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Padding = new System.Windows.Forms.Padding(5, 0, 5, 20);
             this.pnlMain.Size = new System.Drawing.Size(768, 498);
             this.pnlMain.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnCancelar);
+            this.panel1.Controls.Add(this.btnOk);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(5, 453);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(758, 25);
+            this.panel1.TabIndex = 38;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(658, 0);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(100, 25);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnOk
+            // 
+            this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.Location = new System.Drawing.Point(552, 0);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(100, 25);
+            this.btnOk.TabIndex = 2;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
             // 
             // gbEndereco
             // 
             this.gbEndereco.Controls.Add(this.lblCidade);
+            this.gbEndereco.Controls.Add(this.lblUf);
             this.gbEndereco.Controls.Add(this.lblNumero);
             this.gbEndereco.Controls.Add(this.lblRua);
             this.gbEndereco.Controls.Add(this.txtCidade);
+            this.gbEndereco.Controls.Add(this.txtUf);
             this.gbEndereco.Controls.Add(this.textBox1);
             this.gbEndereco.Controls.Add(this.txtRua);
-            this.gbEndereco.Location = new System.Drawing.Point(12, 276);
+            this.gbEndereco.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbEndereco.Location = new System.Drawing.Point(5, 245);
             this.gbEndereco.Name = "gbEndereco";
-            this.gbEndereco.Size = new System.Drawing.Size(744, 102);
+            this.gbEndereco.Size = new System.Drawing.Size(758, 102);
             this.gbEndereco.TabIndex = 3;
             this.gbEndereco.TabStop = false;
             this.gbEndereco.Text = "Dados de endereços";
@@ -245,6 +248,16 @@
             this.lblCidade.Size = new System.Drawing.Size(40, 13);
             this.lblCidade.TabIndex = 7;
             this.lblCidade.Text = "Cidade";
+            // 
+            // lblUf
+            // 
+            this.lblUf.AutoSize = true;
+            this.lblUf.Location = new System.Drawing.Point(380, 55);
+            this.lblUf.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.lblUf.Name = "lblUf";
+            this.lblUf.Size = new System.Drawing.Size(21, 13);
+            this.lblUf.TabIndex = 7;
+            this.lblUf.Text = "UF";
             // 
             // lblNumero
             // 
@@ -264,6 +277,15 @@
             this.txtCidade.Size = new System.Drawing.Size(367, 20);
             this.txtCidade.TabIndex = 10;
             // 
+            // txtUf
+            // 
+            this.txtUf.Location = new System.Drawing.Point(383, 71);
+            this.txtUf.MaxLength = 50;
+            this.txtUf.Name = "txtUf";
+            this.txtUf.Size = new System.Drawing.Size(40, 20);
+            this.txtUf.TabIndex = 9;
+            this.txtUf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(383, 32);
@@ -281,9 +303,10 @@
             this.gbContato.Controls.Add(this.lblTelefone1);
             this.gbContato.Controls.Add(this.lblEmail);
             this.gbContato.Controls.Add(this.txtEmail);
-            this.gbContato.Location = new System.Drawing.Point(13, 200);
+            this.gbContato.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbContato.Location = new System.Drawing.Point(5, 176);
             this.gbContato.Name = "gbContato";
-            this.gbContato.Size = new System.Drawing.Size(743, 69);
+            this.gbContato.Size = new System.Drawing.Size(758, 69);
             this.gbContato.TabIndex = 2;
             this.gbContato.TabStop = false;
             this.gbContato.Text = "Dados de contato";
@@ -331,9 +354,10 @@
             this.gbDadosPessoais.Controls.Add(this.txtNome);
             this.gbDadosPessoais.Controls.Add(this.lblCpfCnpj);
             this.gbDadosPessoais.Controls.Add(this.txtDescricao);
-            this.gbDadosPessoais.Location = new System.Drawing.Point(13, 88);
+            this.gbDadosPessoais.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbDadosPessoais.Location = new System.Drawing.Point(5, 70);
             this.gbDadosPessoais.Name = "gbDadosPessoais";
-            this.gbDadosPessoais.Size = new System.Drawing.Size(743, 106);
+            this.gbDadosPessoais.Size = new System.Drawing.Size(758, 106);
             this.gbDadosPessoais.TabIndex = 1;
             this.gbDadosPessoais.TabStop = false;
             this.gbDadosPessoais.Text = "Dados pessois";
@@ -346,9 +370,10 @@
             this.gbDadosUsuario.Controls.Add(this.cbUsuario);
             this.gbDadosUsuario.Controls.Add(this.lblUsuario);
             this.gbDadosUsuario.Controls.Add(this.lblCodigo);
-            this.gbDadosUsuario.Location = new System.Drawing.Point(12, 12);
+            this.gbDadosUsuario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbDadosUsuario.Location = new System.Drawing.Point(5, 0);
             this.gbDadosUsuario.Name = "gbDadosUsuario";
-            this.gbDadosUsuario.Size = new System.Drawing.Size(744, 70);
+            this.gbDadosUsuario.Size = new System.Drawing.Size(758, 70);
             this.gbDadosUsuario.TabIndex = 0;
             this.gbDadosUsuario.TabStop = false;
             this.gbDadosUsuario.Text = "Dados de usuário";
@@ -380,8 +405,8 @@
             this.MaximumSize = new System.Drawing.Size(784, 537);
             this.Name = "frmCadPes";
             this.Text = "FormCadPes";
-            this.panel1.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.gbEndereco.ResumeLayout(false);
             this.gbEndereco.PerformLayout();
             this.gbContato.ResumeLayout(false);
@@ -400,9 +425,6 @@
         private System.Windows.Forms.TextBox txtTelefone1;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblTelefone1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.ComboBox cbPessoa;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label lblCpfCnpj;
@@ -426,5 +448,10 @@
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Label lblUf;
+        private System.Windows.Forms.TextBox txtUf;
     }
 }

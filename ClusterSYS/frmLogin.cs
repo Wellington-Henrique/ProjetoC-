@@ -12,7 +12,7 @@ namespace ClusterSYS
 {
     public partial class frmLogin : Form
     {
-        int contaTentativas = 0;
+        int contaTentativas = 0; //Conta os erros de login são permitidos apenas três tentativas
 
         public frmLogin()
         {
@@ -20,25 +20,17 @@ namespace ClusterSYS
             InitializeComponent();
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-            lblMsg.Text = "";
-        }
-
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            frmPrincipal principal = new frmPrincipal();
-
             if (txtLogin.Text == "adm" && txtSenha.Text == "123")
             {
-                //frmLogin.ActiveForm.Hide();
-                Hide();
-                principal.Show();             
+                DialogResult = DialogResult.OK;
+                this.Close();           
             }
             else if (contaTentativas == 2)
             {
                 MessageBox.Show("Você excedeu a quantidade de tentativas permitidas", "Login de usurio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                Close();
+                Application.Exit();
             }
 
             else
@@ -46,7 +38,6 @@ namespace ClusterSYS
                 lblMsg.Visible = true;
                 contaTentativas++;
             }
-
         }
     }
 }

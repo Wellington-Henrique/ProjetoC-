@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.R4 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.gbDadosUsuario = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.lblCpfCnpj = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.lblCpfCnpj = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.R4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gbDadosUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // R4
@@ -62,6 +62,96 @@
             this.R4.Name = "R4";
             this.R4.Size = new System.Drawing.Size(584, 361);
             this.R4.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.gbDadosUsuario);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(72, 286);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.panel2.Size = new System.Drawing.Size(512, 75);
+            this.panel2.TabIndex = 2;
+            // 
+            // gbDadosUsuario
+            // 
+            this.gbDadosUsuario.Controls.Add(this.button5);
+            this.gbDadosUsuario.Controls.Add(this.lblCpfCnpj);
+            this.gbDadosUsuario.Controls.Add(this.lblNome);
+            this.gbDadosUsuario.Controls.Add(this.txtDescricao);
+            this.gbDadosUsuario.Controls.Add(this.txtNome);
+            this.gbDadosUsuario.Controls.Add(this.txtCodigo);
+            this.gbDadosUsuario.Controls.Add(this.lblCodigo);
+            this.gbDadosUsuario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbDadosUsuario.Location = new System.Drawing.Point(5, 0);
+            this.gbDadosUsuario.Name = "gbDadosUsuario";
+            this.gbDadosUsuario.Size = new System.Drawing.Size(502, 70);
+            this.gbDadosUsuario.TabIndex = 1;
+            this.gbDadosUsuario.TabStop = false;
+            this.gbDadosUsuario.Text = "Dados para busca";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(426, 34);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(62, 23);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Buscar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // lblCpfCnpj
+            // 
+            this.lblCpfCnpj.AutoSize = true;
+            this.lblCpfCnpj.Location = new System.Drawing.Point(325, 18);
+            this.lblCpfCnpj.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.lblCpfCnpj.Name = "lblCpfCnpj";
+            this.lblCpfCnpj.Size = new System.Drawing.Size(65, 13);
+            this.lblCpfCnpj.TabIndex = 14;
+            this.lblCpfCnpj.Text = "CPF / CNPJ";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(90, 18);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(35, 13);
+            this.lblNome.TabIndex = 15;
+            this.lblNome.Text = "Nome";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(328, 34);
+            this.txtDescricao.MaxLength = 50;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(92, 20);
+            this.txtDescricao.TabIndex = 13;
+            this.txtDescricao.Text = "00000000000100";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(92, 34);
+            this.txtNome.MaxLength = 50;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(230, 20);
+            this.txtNome.TabIndex = 12;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(10, 34);
+            this.txtCodigo.MaxLength = 3;
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(74, 20);
+            this.txtCodigo.TabIndex = 0;
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(7, 18);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigo.TabIndex = 18;
+            this.lblCodigo.Text = "Código";
             // 
             // dataGridView1
             // 
@@ -85,14 +175,23 @@
             this.panel1.Size = new System.Drawing.Size(72, 361);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Incluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(4, 326);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(62, 23);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Sair";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(4, 62);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(62, 23);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Excluir";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -103,111 +202,14 @@
             this.button2.Text = "Alterar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(4, 326);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(62, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Sair";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.gbDadosUsuario);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(72, 261);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(512, 100);
-            this.panel2.TabIndex = 2;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(4, 62);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(62, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Consultar";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // gbDadosUsuario
-            // 
-            this.gbDadosUsuario.Controls.Add(this.button5);
-            this.gbDadosUsuario.Controls.Add(this.lblCpfCnpj);
-            this.gbDadosUsuario.Controls.Add(this.lblNome);
-            this.gbDadosUsuario.Controls.Add(this.txtDescricao);
-            this.gbDadosUsuario.Controls.Add(this.txtNome);
-            this.gbDadosUsuario.Controls.Add(this.txtCodigo);
-            this.gbDadosUsuario.Controls.Add(this.lblCodigo);
-            this.gbDadosUsuario.Location = new System.Drawing.Point(6, 18);
-            this.gbDadosUsuario.Name = "gbDadosUsuario";
-            this.gbDadosUsuario.Size = new System.Drawing.Size(494, 70);
-            this.gbDadosUsuario.TabIndex = 1;
-            this.gbDadosUsuario.TabStop = false;
-            this.gbDadosUsuario.Text = "Dados para busca";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(10, 34);
-            this.txtCodigo.MaxLength = 3;
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(74, 20);
-            this.txtCodigo.TabIndex = 0;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(7, 18);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
-            this.lblCodigo.TabIndex = 18;
-            this.lblCodigo.Text = "Código";
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(90, 18);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(35, 13);
-            this.lblNome.TabIndex = 15;
-            this.lblNome.Text = "Nome";
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(92, 34);
-            this.txtNome.MaxLength = 50;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(230, 20);
-            this.txtNome.TabIndex = 12;
-            // 
-            // lblCpfCnpj
-            // 
-            this.lblCpfCnpj.AutoSize = true;
-            this.lblCpfCnpj.Location = new System.Drawing.Point(325, 18);
-            this.lblCpfCnpj.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
-            this.lblCpfCnpj.Name = "lblCpfCnpj";
-            this.lblCpfCnpj.Size = new System.Drawing.Size(65, 13);
-            this.lblCpfCnpj.TabIndex = 14;
-            this.lblCpfCnpj.Text = "CPF / CNPJ";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(328, 34);
-            this.txtDescricao.MaxLength = 50;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(92, 20);
-            this.txtDescricao.TabIndex = 13;
-            this.txtDescricao.Text = "00000000000100";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(426, 34);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(62, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(4, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(62, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Incluir";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmBuscaPessoa
             // 
@@ -215,17 +217,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.R4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(600, 400);
             this.Name = "frmBuscaPessoa";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Pessoa";
             this.R4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.gbDadosUsuario.ResumeLayout(false);
             this.gbDadosUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
