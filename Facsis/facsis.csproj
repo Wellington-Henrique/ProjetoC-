@@ -115,7 +115,7 @@
     <Compile Include="View\frmVenda.Designer.cs">
       <DependentUpon>frmVenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controller\Program.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\frmBuscaPessoa.resx">
       <DependentUpon>frmBuscaPessoa.cs</DependentUpon>
@@ -165,7 +165,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Controller\App.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -180,6 +180,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controller\" />
     <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

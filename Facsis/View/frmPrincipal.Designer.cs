@@ -112,21 +112,21 @@
             // msCadCli
             // 
             this.msCadCli.Name = "msCadCli";
-            this.msCadCli.Size = new System.Drawing.Size(152, 22);
+            this.msCadCli.Size = new System.Drawing.Size(117, 22);
             this.msCadCli.Text = "Pessoa";
             this.msCadCli.Click += new System.EventHandler(this.msCadCli_Click);
             // 
             // msCadProd
             // 
             this.msCadProd.Name = "msCadProd";
-            this.msCadProd.Size = new System.Drawing.Size(152, 22);
+            this.msCadProd.Size = new System.Drawing.Size(117, 22);
             this.msCadProd.Text = "Produto";
             this.msCadProd.Click += new System.EventHandler(this.msCadProd_Click);
             // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.usuarioToolStripMenuItem.Text = "Usuário";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
@@ -159,6 +159,7 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facsis";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.encerraSistema);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

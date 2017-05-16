@@ -125,5 +125,15 @@ namespace ClusterSYS
             pnlBaseFrm.Controls.Add(usuario);
             usuario.Show();
         }
+
+        private void encerraSistema(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+                if (MessageBox.Show(this, "Você tem certeza que deseja sair?",
+                    "Facsis", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                    Application.Exit(); //Encerra o sistema
+                else
+                    e.Cancel = true; //Permanece no sistema
+        }
     }
 }
